@@ -28,6 +28,12 @@ export default function HostNavbar() {
       >
         Reviews
       </NavLink>
+      <NavLink
+        to="/host/vans"
+        style={({ isActive }) => (isActive ? activeStyles : null)}
+      >
+        Vans
+      </NavLink>
     </nav>
   );
 }
