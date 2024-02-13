@@ -1,5 +1,11 @@
 import React from "react";
-import { useParams, Link, Outlet, NavLink } from "react-router-dom";
+import {
+  useParams,
+  Link,
+  Outlet,
+  NavLink,
+  useOutletContext,
+} from "react-router-dom";
 
 export default function HostVanDetail() {
   const activeStyles = {
@@ -61,7 +67,7 @@ export default function HostVanDetail() {
           </NavLink>
         </nav>
 
-        <Outlet />
+        <Outlet context={{currentVan}} />
       </div>
     </section>
   );
