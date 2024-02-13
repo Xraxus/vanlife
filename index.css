@@ -299,9 +299,6 @@ i[class*="van-type-"] {
   text-decoration: none;
 }
 
-.van-detail-container .back-button:visited {
-}
-
 .van-detail-container .back-button span {
   text-decoration: underline;
 }
@@ -533,6 +530,6 @@ i[class*="van-type-"] {
   font-family: "Inter", sans-serif;
 }
 
-.login-first {
-  color: red;
+.login-error {
+  color: rgb(255, 0, 0);
 }
